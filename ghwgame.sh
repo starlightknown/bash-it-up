@@ -41,6 +41,7 @@ read hacker
 if [[ $mascot == $hacker ]]; then
 	echo "Mascot DEFEATED!! congratulations hacker,you got a famous 
 charecter than the mascot"
+open /Users/karunatata/Documents/movie.mp4  
 else
 	echo "mascot wins! Better luck next time"
 	exit 1
