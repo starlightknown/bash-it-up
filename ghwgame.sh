@@ -28,3 +28,36 @@ esac
 
 echo "you chose the $type class. Your attack is $attack and it 
 will...$description"
+
+#first mascot battle
+
+mascot=$(( $RANDOM % 2))
+
+echo "Ada Lovelace approaches you to attack with her computer. Prepare to 
+battle. Pick a number between 0-1. (0/1)"
+
+read hacker
+
+if [[ $mascot == $hacker ]]; then
+	echo "Mascot DEFEATED!! congratulations hacker,you got a famous 
+charecter than the mascot"
+else
+	echo "mascot wins! Better luck next time"
+	exit 1
+fi
+
+sleep 2
+
+echo "Bot battle. Get ready. It's Bit the Bot. Pick a number 0-9. (0-9)"
+
+read hacker
+
+mascot=$(($RANDOM %10))
+if [[ $mascot == $hacker || $hacker == $type || $type == "rick astley" ]]; 
+then
+        echo "Mascot DEFEATED!! congratulations hacker,you got a famous
+charecter than the mascot"
+else
+        echo "mascot wins! Better luck next time"
+        exit
+fi
